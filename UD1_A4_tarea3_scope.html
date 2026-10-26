@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Accesible con scope - Tarea 3</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 14px;
+            vertical-align: middle;
+        }
+       
+        .grupo {
+            background-color: #BBBBFF;
+            font-weight: bold;
+        }
+        
+        .hombres-header {
+            background-color: #FFBBBB;
+        }
+        
+        .hombres-num {
+            background-color: #FFBBBB;
+        }
+       
+        .hombres-pct {
+            background-color: #FFCCCC;
+        }
+        
+        .mujeres-header {
+            background-color: #AAFFAA;
+        }
+        
+        .mujeres-num {
+            background-color: #AAFFAA;
+        }
+        
+        .mujeres-pct {
+            background-color: #BBFFB8;
+        }
+        
+        .cabecera {
+            background-color: #BBBBFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2" scope="col" class="cabecera">Grupos de edades</th>
+            <th colspan="2" scope="colgroup" class="hombres-header">Hombres</th>
+            <th colspan="2" scope="colgroup" class="mujeres-header">Mujeres</th>
+        </tr>
+        <tr>
+            <th scope="col" class="hombres-header">Num</th>
+            <th scope="col" class="hombres-header">%</th>
+            <th scope="col" class="mujeres-header">Num</th>
+            <th scope="col" class="mujeres-header">%</th>
+        </tr>
+        <tr>
+            <th scope="row" class="grupo">8-16</th>
+            <td class="hombres-num">16</td>
+            <td class="hombres-pct">14.5</td>
+            <td class="mujeres-num">10</td>
+            <td class="mujeres-pct">9</td>
+        </tr>
+        <tr>
+            <th scope="row" class="grupo">17-23</th>
+            <td class="hombres-num">8</td>
+            <td class="hombres-pct">7</td>
+            <td class="mujeres-num">13</td>
+            <td class="mujeres-pct">11.5</td>
+        </tr>
+        <tr>
+            <th scope="row" class="grupo">24-38</th>
+            <td class="hombres-num">15</td>
+            <td class="hombres-pct">14</td>
+            <td class="mujeres-num">8</td>
+            <td class="mujeres-pct">7</td>
+        </tr>
+        <tr>
+            <th scope="row" class="grupo">39-56</th>
+            <td class="hombres-num">21</td>
+            <td class="hombres-pct">19</td>
+            <td class="mujeres-num">19</td>
+            <td class="mujeres-pct">17</td>
+        </tr>
+    </table>
+</body>
+</html>

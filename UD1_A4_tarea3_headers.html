@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Accesible con headers - Tarea 3</title>
+    <style>
+         table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 14px;
+            vertical-align: middle;
+        }
+       
+        .grupo {
+            background-color: #BBBBFF;
+            font-weight: bold;
+        }
+        
+        .hombres-header {
+            background-color: #FFBBBB;
+        }
+        
+        .hombres-num {
+            background-color: #FFBBBB;
+        }
+       
+        .hombres-pct {
+            background-color: #FFCCCC;
+        }
+        
+        .mujeres-header {
+            background-color: #AAFFAA;
+        }
+        
+        .mujeres-num {
+            background-color: #AAFFAA;
+        }
+        
+        .mujeres-pct {
+            background-color: #BBFFB8;
+        }
+        
+        .cabecera {
+            background-color: #BBBBFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2" id="grupos" class="cabecera">Grupos de edades</th>
+            <th colspan="2" id="hombres" class="hombres-header">Hombres</th>
+            <th colspan="2" id="mujeres" class="mujeres-header">Mujeres</th>
+        </tr>
+        <tr>
+            <th id="h-num" class="hombres-header">Num</th>
+            <th id="h-pct" class="hombres-header">%</th>
+            <th id="m-num" class="mujeres-header">Num</th>
+            <th id="m-pct" class="mujeres-header">%</th>
+        </tr>
+        <tr>
+            <th id="edad1" class="grupo">8-16</th>
+            <td headers="edad1 hombres h-num" class="hombres-num">16</td>
+            <td headers="edad1 hombres h-pct" class="hombres-pct">14.5</td>
+            <td headers="edad1 mujeres m-num" class="mujeres-num">10</td>
+            <td headers="edad1 mujeres m-pct" class="mujeres-pct">9</td>
+        </tr>
+        <tr>
+            <th id="edad2" class="grupo">17-23</th>
+            <td headers="edad2 hombres h-num" class="hombres-num">8</td>
+            <td headers="edad2 hombres h-pct" class="hombres-pct">7</td>
+            <td headers="edad2 mujeres m-num" class="mujeres-num">13</td>
+            <td headers="edad2 mujeres m-pct" class="mujeres-pct">11.5</td>
+        </tr>
+        <tr>
+            <th id="edad3" class="grupo">24-38</th>
+            <td headers="edad3 hombres h-num" class="hombres-num">15</td>
+            <td headers="edad3 hombres h-pct" class="hombres-pct">14</td>
+            <td headers="edad3 mujeres m-num" class="mujeres-num">8</td>
+            <td headers="edad3 mujeres m-pct" class="mujeres-pct">7</td>
+        </tr>
+        <tr>
+            <th id="edad4" class="grupo">39-56</th>
+            <td headers="edad4 hombres h-num" class="hombres-num">21</td>
+            <td headers="edad4 hombres h-pct" class="hombres-pct">19</td>
+            <td headers="edad4 mujeres m-num" class="mujeres-num">19</td>
+            <td headers="edad4 mujeres m-pct" class="mujeres-pct">17</td>
+        </tr>
+    </table>
+</body>
+</html>
